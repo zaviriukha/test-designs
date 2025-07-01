@@ -28,7 +28,7 @@
             @drop.prevent="onDrop"
         >
           <p v-if="!preview">Перетягніть зображення або виберіть файл</p>
-          <img v-if="preview" :src="preview" class="preview" />
+          <img v-if="preview" :src="preview" alt="preview" class="preview" />
           <input type="file" @change="onFileChange" class="file-input" />
         </div>
 
